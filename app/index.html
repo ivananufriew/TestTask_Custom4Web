@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Welcome :)</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<main>
+		<div class="search-panel">
+			<input type="text" id="query" placeholder="Type some text to search..." autocomplete="off">
+		</div>
+		<div class="table-wrap">
+			<table>
+				<thead>
+					<th data-label="id">Id</th>
+					<th data-label="title">Title</th>
+					<th data-label="price">Price</th>
+					<th data-label="color">Color</th>
+					<th data-label="department">Department</th>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+		<div class="buttons">
+			<button id="back">&laquo; Пред. страница</button>
+			<button id="next">След. страница &raquo;</button>
+		</div>
+		<p>Страница <span class="limit"></span> из <span class="total"></span></p>
+	</main>
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>

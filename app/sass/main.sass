@@ -1,0 +1,125 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	touch-action: manipulation
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #555
+	opacity: 1
+
+*:-moz-placeholder
+	color: #555
+	opacity: 1
+
+*::-moz-placeholder
+	color: #555
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #555
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+
+main
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-direction: column
+	width: 800px
+	margin: 100px auto
+	.search-panel
+		width: 100%
+		display: flex
+		justify-content: flex-end
+		input
+			width: 300px
+			padding: 5px
+			font-size: 11px
+			border: 1px solid #555
+			outline: none
+			background-image: url(../img/search.svg)
+			background-repeat: no-repeat
+			background-position: 98% center
+			background-size: 15px
+	.table-wrap
+		width: 100%
+		overflow: hidden
+	table
+		width: 100%
+		min-width: 500px
+		margin: 35px 0 0
+		thead
+			background-color: #555
+			th
+				color: #fff
+				user-select: none
+		tr
+			th,td
+				padding: 7px 10px
+				font-size: 11px
+				text-align: left
+				font-weight: bold
+			&:nth-child(even)
+				background-color: #eee
+	.buttons
+		width: 100%
+		margin: 20px 0 0
+		display: flex
+		justify-content: space-between
+		button
+			background-color: transparent
+			border: 2px solid #555
+			font-size: 11px
+			font-weight: bold
+			padding: 7px 10px
+			text-transform: uppercase
+			transition: all 0.35s ease
+			outline: none
+			&:hover
+				border-color: $accent
+				color: $accent
+			&[disabled]
+				border-color: #CCC
+				color: #CCC
+				user-select:
+				point-events: none
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+::selection
+	background-color: $accent
+	color: #fff
+
+@import "media" // Всегда в конце
